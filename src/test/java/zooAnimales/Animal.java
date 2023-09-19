@@ -9,7 +9,9 @@ public class Animal {
 	private String genero;
 	private Zona zona;
 	
-	public Animal() {}
+	public Animal() {
+		totalAnimales ++;
+	}
 	public Animal(String nombre, int edad, String habitat, String genero) {
 		this.nombre = nombre;
 		this.edad = edad;
@@ -32,11 +34,11 @@ public class Animal {
 	} 
 	
 	public static String totalPorTipo() {
-		String resultado = "Mamiferos: " + Mamifero.getListado().size() + "\n"+
-				"Aves: " + Ave.getListado().size() + "\n"+
-				"Reptiles:" + Reptil.getListado().size()+"\n"+
-				"Peces: " + Pez.getListado().size() +"\n"+
-				"Anfibios: " + Anfibio.getListado().size();
+		String resultado = "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n"+
+				"Aves: " + Ave.cantidadAves() + "\n"+
+				"Reptiles:" + Reptil.cantidadReptiles()+"\n"+
+				"Peces: " + Pez.cantidadPeces() +"\n"+
+				"Anfibios: " + Anfibio.cantidadAnfibios();
 		return resultado;
 	}
 	public int getTotalAnimales() {

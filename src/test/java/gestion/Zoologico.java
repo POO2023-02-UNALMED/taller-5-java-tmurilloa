@@ -31,7 +31,7 @@ public class Zoologico {
 	 public List<Zona> getZona() {
 		 return zonas;
 	 }
-	 public void agregarZona(Zona zona) {
+	 public void agregarZonas(Zona zona) {
 		 zonas.add(zona);
 	 }
 	

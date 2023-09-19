@@ -52,7 +52,7 @@ public class Anfibio extends Animal{
 	public void setListado(List<Anfibio> nuevolistado) {
 		listado = nuevolistado;
 	}
-	public List<Anfibio> getListado(){
+	public static List<Anfibio> getListado(){
 		return listado;
 	}
 }

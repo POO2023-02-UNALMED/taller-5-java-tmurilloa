@@ -49,7 +49,7 @@ public class Mamifero extends Animal {
 	public void setListado(List<Mamifero> nuevolistado) {
 		listado = nuevolistado;
 	}
-	public List<Mamifero> getListado(){
+	public static List<Mamifero> getListado(){
 		return listado;
 	}
 }

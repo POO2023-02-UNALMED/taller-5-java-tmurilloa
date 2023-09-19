@@ -44,7 +44,7 @@ public class Ave extends Animal{
 	public void setListado(List<Ave> nuevolistado) {
 		listado = nuevolistado;
 	}
-	public List<Ave> getListado(){
+	public static List<Ave> getListado(){
 		return listado;
 	}
 }

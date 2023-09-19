@@ -52,7 +52,7 @@ public class Pez extends Animal{
 	public void setListado(List<Pez> nuevolistado) {
 		listado = nuevolistado;
 	}
-	public List<Pez> getListado(){
+	public static List<Pez> getListado(){
 		return listado;
 	}
 }

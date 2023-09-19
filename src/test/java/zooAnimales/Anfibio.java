@@ -16,6 +16,7 @@ public class Anfibio extends Animal{
 		super(nombre,edad,habitat,genero);
 		this.colorPiel = colorPiel;
 		this.venenoso = venenoso;
+		listado.add(this);
 	}
 	public static int cantidadAnfibios(){
 		return listado.size();

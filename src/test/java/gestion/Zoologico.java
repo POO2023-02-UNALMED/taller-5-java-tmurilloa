@@ -8,10 +8,9 @@ public class Zoologico {
 	 private List<Zona> zonas = new ArrayList<>();
 	 
 	 public Zoologico() {}
-	 public Zoologico(String nombre, String ubicacion, List<Zona> zonas) {
+	 public Zoologico(String nombre, String ubicacion) {
 		 this.nombre = nombre;
 		 this.ubicacion = ubicacion;
-		 this.zonas = zonas;
 	 }
 	 
 	 public void setNombre(String nombre) {
@@ -29,10 +28,10 @@ public class Zoologico {
 	 public void setZonas(List<Zona> zonas) {
 		 this.zonas = zonas;
 	 }
-	 public List<Zona> getZonas() {
+	 public List<Zona> getZona() {
 		 return zonas;
 	 }
-	 public void agregarZonas(Zona zona) {
+	 public void agregarZona(Zona zona) {
 		 zonas.add(zona);
 	 }
 	

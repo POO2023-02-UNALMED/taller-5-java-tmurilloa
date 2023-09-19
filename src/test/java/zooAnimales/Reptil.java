@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Reptil extends Animal {
 	private static List<Reptil> listado = new ArrayList<>();
-	public int iguanas;
-	public int serpientes;
+	public static int iguanas;
+	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
 	
@@ -25,13 +25,15 @@ public class Reptil extends Animal {
 	public String movimiento() {
 		return "reptar";
 	}
-	public void crearIguana(String nombre, int edad, String genero) {
-		new Reptil(nombre,edad,"humedal",genero,"verde",3);
+	public static Reptil crearIguana(String nombre, int edad, String genero) {
+		Reptil iguana = new Reptil(nombre,edad,"humedal",genero,"verde",3);
 		iguanas ++;
+		return iguana;
 	}
-	public void crearSerpiente(String nombre, int edad, String genero) {
-		new Reptil(nombre,edad,"humedal",genero,"blanco",1);
+	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
+		Reptil serpiente = new Reptil(nombre,edad,"humedal",genero,"blanco",1);
 		serpientes ++;
+		return serpiente;
 	}
 	public String getColorEscamas() {
 		return colorEscamas;

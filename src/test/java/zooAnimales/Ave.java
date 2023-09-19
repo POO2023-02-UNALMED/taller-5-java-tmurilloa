@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Ave extends Animal{
 	private static List<Ave> listado = new ArrayList<>();
-	public int halcones;
-	public int aguilas;
+	public static int halcones;
+	public static int aguilas;
 	private String colorPlumas;
 
 	public Ave() {}
@@ -23,21 +23,15 @@ public class Ave extends Animal{
 	public String movimiento() {
 		return "volar";
 	}
-	public void crearHalcon(String nombre, int edad, String genero) {
-		setHabitat("montanas");
-		colorPlumas = "cafe glorioso";
-		setNombre(nombre);
-		setEdad(edad);
-		setGenero(genero);
+	public static Ave crearHalcon(String nombre, int edad, String genero) {
+		Ave halcon = new Ave(nombre,edad,"montanas",genero,"cafe glorioso");
 		halcones ++;
+		return halcon;
 	}
-	public void crearAguilas(String nombre, int edad, String genero) {
-		setHabitat("montanas");
-		colorPlumas = "blanco y amarillo";
-		setNombre(nombre);
-		setEdad(edad);
-		setGenero(genero);
-		aguilas ++;		
+	public static Ave AvecrearAguila(String nombre, int edad, String genero) {
+		Ave aguila = new Ave(nombre,edad,"montanas",genero,"blanco y amarillo");
+		aguilas ++;
+		return aguila;
 	}
 	public void setColorPlumas(String colorPlumas) {
 		this.colorPlumas = colorPlumas;

@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Pez extends Animal{
 	private static List<Pez> listado = new ArrayList<>();
-	public int salmones;
-	public int bacalaos;
+	public static int salmones;
+	public static int bacalaos;
 	private String colorEscamas;
 	private int cantidadAletas;
 	
@@ -25,13 +25,15 @@ public class Pez extends Animal{
 	public String movimiento() {
 		return "nadar";
 	}
-	public void crearSalmon(String nombre, int edad, String genero) {
-		new Pez(nombre,edad,"oceano",genero,"rojo",6);
+	public static Pez crearSalmon(String nombre, int edad, String genero) {
+		Pez salmon = new Pez(nombre,edad,"oceano",genero,"rojo",6);
 		salmones ++;
+		return salmon;
 	}
-	public void crearBacalao(String nombre, int edad, String genero) {
-		new Pez(nombre,edad,"oceano",genero,"gris",6);
+	public static Pez crearBacalao(String nombre, int edad, String genero) {
+		Pez bacalao = new Pez(nombre,edad,"oceano",genero,"gris",6);
 		bacalaos ++;
+		return bacalao;
 	}
 	public String getColorEscamas() {
 		return colorEscamas;

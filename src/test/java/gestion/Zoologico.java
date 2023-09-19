@@ -35,6 +35,13 @@ public class Zoologico {
 	 public void agregarZonas(Zona zona) {
 		 zonas.add(zona);
 	 }
-	 // falta el metodo cantidadTotalAnimales()
-	 
+	
+	 public int cantidadTotalAnimales() {
+		 int totalAnimales = 0;
+		 for (int i = 0; i< zonas.size(); i++){
+			 int x = zonas.get(i).getAnimales().size();
+			 totalAnimales += x;			 
+		 }
+		 return totalAnimales;
+	 }
 }

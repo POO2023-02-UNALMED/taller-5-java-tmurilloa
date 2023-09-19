@@ -13,8 +13,7 @@ public class Pez extends Animal{
 	public Pez() {
 		listado.add(this);
 	}
-	public Pez(String nombre, int edad, String habitat, String genero,
-			String colorEscamas, int cantidadAletas) {
+	public Pez(String nombre, int edad, String habitat, String genero,String colorEscamas, int cantidadAletas) {
 		super(nombre,edad,habitat,genero);
 		this.colorEscamas = colorEscamas;
 		this.cantidadAletas = cantidadAletas;
@@ -48,9 +47,6 @@ public class Pez extends Animal{
 	}
 	public void setCantidadAletas(int cantidadAletas) {
 		this.cantidadAletas = cantidadAletas;
-	}
-	public void setListado(List<Pez> nuevolistado) {
-		listado = nuevolistado;
 	}
 	public static List<Pez> getListado(){
 		return listado;

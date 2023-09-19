@@ -13,8 +13,7 @@ public class Mamifero extends Animal {
 	public Mamifero() {
 		listado.add(this);
 	}
-	public Mamifero(String nombre, int edad, String habitat, String genero,
-			boolean pelaje, int patas ) {
+	public Mamifero(String nombre, int edad, String habitat, String genero,boolean pelaje, int patas ) {
 			super(nombre,edad,habitat,genero);
 			this.pelaje = pelaje;
 			this.patas = patas;
@@ -46,9 +45,6 @@ public class Mamifero extends Animal {
 		return patas;
 		}
 	
-	public void setListado(List<Mamifero> nuevolistado) {
-		listado = nuevolistado;
-	}
 	public static List<Mamifero> getListado(){
 		return listado;
 	}

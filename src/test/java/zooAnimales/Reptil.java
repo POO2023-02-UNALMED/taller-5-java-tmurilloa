@@ -13,8 +13,7 @@ public class Reptil extends Animal {
 	public Reptil() {
 		listado.add(this);
 	}
-	public Reptil(String nombre, int edad, String habitat, String genero,
-			String colorEscamas, int largoCola) {
+	public Reptil(String nombre, int edad, String habitat, String genero,String colorEscamas, int largoCola) {
 		super(nombre,edad,habitat,genero);
 		this.colorEscamas = colorEscamas;
 		this.largoCola = largoCola;
@@ -48,9 +47,6 @@ public class Reptil extends Animal {
 	}
 	public void setLargoCola(int largoCola) {
 		this.largoCola = largoCola;
-	}
-	public void setListado(List<Reptil> nuevolistado) {
-		listado = nuevolistado;
 	}
 	public static List<Reptil> getListado(){
 		return listado;

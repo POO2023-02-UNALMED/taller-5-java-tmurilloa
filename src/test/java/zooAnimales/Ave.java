@@ -12,8 +12,7 @@ public class Ave extends Animal{
 	public Ave() {
 		listado.add(this);
 	}
-	public Ave(String nombre, int edad, String habitat, String genero,
-			String colorPlumas) {
+	public Ave(String nombre, int edad, String habitat, String genero,String colorPlumas) {
 		super(nombre,edad,habitat,genero);
 		this.colorPlumas = colorPlumas;
 		listado.add(this);
@@ -40,9 +39,6 @@ public class Ave extends Animal{
 	}
 	public String getColorPlumas() {
 		return colorPlumas;
-	}
-	public void setListado(List<Ave> nuevolistado) {
-		listado = nuevolistado;
 	}
 	public static List<Ave> getListado(){
 		return listado;

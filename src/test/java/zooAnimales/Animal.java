@@ -37,7 +37,7 @@ public class Animal {
 		String resultado = 
 				"Mamiferos: " + Mamifero.cantidadMamiferos()+
 				"\nAves: " + Ave.cantidadAves() +
-				"\nReptiles:" + Reptil.cantidadReptiles()+
+				"\nReptiles: " + Reptil.cantidadReptiles()+
 				"\nPeces: " + Pez.cantidadPeces() +
 				"\nAnfibios: " + Anfibio.cantidadAnfibios();
 		return resultado;
